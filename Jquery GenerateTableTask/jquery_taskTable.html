@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Jquery Table Task</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="bootstrap/bootstrap_css.css" rel="stylesheet">
+
+  <!--Linking external css-->
+  <link href="jquery_taskTable_style.css" rel="stylesheet"></link>
+
+  <!-- Including the jquery library -->
+  <script src="jquery-3.6.3.js"></script>  
+
+  <!--For Sweet alert-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+
+</head>
+
+<body>
+  <div class="container mt-4 text-center">
+    <h1 class="my-3">TABLE GENEARATION</h1>
+    <input class="mx-2" placeholder="Enter No. Of Rows" title="You can only enter numbers" id="row" pattern="[0-9]">
+    <input class="mx-2" placeholder="Enter No. Of Column" title="You can only enter numbers" id="col" pattern="[0-9]">
+
+    <button id="generateTable" class="btn btn-primary" type="submit">GENERATE TABLE</button>
+  </div>
+  <div class="container" id="createTable"></div>
+   
+</body>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="bootstrap/bootstrap_js_1.js"></script>
+  <script src="bootstrap/bootstrap_js_2.js"></script>
+
+  <!-- Including external js file -->
+  <script src="jquery_taskTable.js"></script>
+
+</html>

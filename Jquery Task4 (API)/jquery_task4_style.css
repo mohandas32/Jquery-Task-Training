@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    background-color: rgb(123, 123, 123);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#recordTable thead {
+    background-color: bisque;
+    font-size: 18px;
+}
+
+td {
+    font-weight: 500;
+    border: 1px solid;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+th {
+    background-color: rgb(41, 41, 41) !important;
+    color: white;
+}
+
+#loadApiDataBtn {
+    height: 45px;
+    ;
+    width: 200px;
+    font-weight: bold;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    color: white;
+    padding: 2px;
+    letter-spacing: 1px;
+}
+
+/* #loading {
+    font-size: 40px;
+    color: white !important;
+} */
+
+#loading {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    margin-top: 20%;
+    margin-left: 50%;
+    position: relative;
+    border: 3px solid;
+    border-color:#de3500 #0000 #fff #0000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: 1s rotate linear infinite;
+ }
+ #loading:before , #loading:after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color:#fff;
+    transform: translate(-10px, 19px) rotate(-35deg);
+  }
+ #loading:after {
+    border-color: #de3500 #0000 #0000 #0000 ;
+    transform: translate(32px, 3px) rotate(-35deg);
+  }
+   @keyframes rotate {
+    100%{    transform: rotate(360deg)}
+  }

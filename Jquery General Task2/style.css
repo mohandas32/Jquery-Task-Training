@@ -1,0 +1,45 @@
+body{
+    background-color: honeydew;
+}
+
+#recordTable thead{
+    background-color: burlywood;
+    font-size: 20px;
+}
+
+#recordTable tbody{
+    background-color: rgb(198, 198, 198);
+    font-size: 18px;
+}
+
+#addRecord {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(0, 220, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#addRecord:hover {
+    background-color: rgba(0, 0, 200, 1);
+}
+
+#addRecord:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 400px){
+    #addRecord{
+        width:100%;
+    }
+    table td{
+        width:100%;
+    }
+}

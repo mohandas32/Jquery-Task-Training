@@ -1,0 +1,72 @@
+body{
+    /* background: linear-gradient(to right,green,blue); */
+    background-color: lightskyblue;
+    
+}
+#formTable thead{
+    background-color: black !important;
+    color: white;
+}
+#formTable tbody{
+    background-color: lightgrey;
+}
+#formTable{
+    counter-reset: section;
+    background-color: rgb(251, 251, 251) !important;
+    border-radius: 10px !important;
+    font-weight: bold;
+  }
+#input{
+    font-weight: bold;
+}
+  
+.count::before {
+    counter-increment: section;
+    content: counter(section);
+  }
+
+#addRow{
+    padding: 10px 22px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    background:palegreen;
+}
+.accept{
+    padding: 6px 15px;
+    background-color: #F5B041;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.reject{
+    padding: 6px 15px;
+    background-color: peru;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#saveRecord{
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    border:2px solid;
+}
+
+@media screen and (max-width:400px){
+    button{
+        width:100%;
+    }
+    #formTable td:nth-of-type(2):before {content:"Name"; font-weight: bold;}
+    #formTable td:nth-of-type(3):before {content:"Subject"; font-weight: bold;}
+    #formTable td:nth-of-type(4):before {content:"Marks"; font-weight: bold;}
+    
+    thead{
+        display: none;
+    }
+    tbody td{
+        display: block;
+        width: 100%
+    }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Jquery Task 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="bootstrap/bootstrap_css.css" rel="stylesheet">
+    <!--Including external css file-->
+    <link href="jquery_task4_style.css" rel="stylesheet">
+
+    <!--Jquery file-->
+    <script src="jquery-3.6.3.js"></script>
+
+    <!--For Sweet alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid mt-3">
+        <h2 align="center">JQUERY TASK 4</h2>
+        <button class="btn" id="loadApiDataBtn">LOAD API DATA</button>
+        <h2 align="center" class="mt-2" id="heading" style="display: none;">API DATA</h2>
+        <div class="table-responsive" id="displayArea" style="display: none;">
+            <table class="table mt-3 text-center" id="recordTable">
+                <thead>
+                    <th>#</th>
+                    <th>API</th>
+                    <th>DESCRIPTION</th>
+                    <th>AUTH</th>
+                    <th>CORS</th>
+                    <th>LINK</th>
+                    <th>CATEGORY</th>
+                </thead>
+                <tbody class="bg-light"> </tbody>
+
+            </table>
+        </div><br>
+        <!-- <div class="text-success my-2" id="loading" style="display: none;">
+           Fetching Data...
+         </div> -->
+        <span id="loading" style="display: none;"></span>
+    </div>
+
+
+    <!--Javascript External File-->
+    <script src="jquery_task4_script_2ndway.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="bootstrap/bootstrap_js_1.js"></script>
+    <script src="bootstrap/bootstrap_js_2.js"></script>
+</body>
+
+</html>

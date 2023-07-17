@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Jquery Task 3</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="bootstrap/bootstrap_css.css" rel="stylesheet">
+
+  <!--Linking external css-->
+  <link href="jquery_task3_style.css" rel="stylesheet"></link>
+
+  <!-- Including the jquery library -->
+  <script src="jquery-3.6.3.js"></script>  
+
+</head>
+
+<body>
+  
+    <div class="container mt-3">
+        <button  id="addRow">ADD RECORD</button>
+        <div class="table-responsive mt-3">
+            <form>
+            <table class="table bg-light" id="formTable">
+                <thead>
+                    <th>SR NO.</th>
+                    <th>NAME</th>
+                    <th>SUBJECT</th>
+                    <th>MARKS</th>
+                    <th>ACTION</th>
+                    <th>REMOVE</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="count"></td>
+                        <td><input type="text" class="form-control stuname" value="Mohan"><span></span></td>
+                        <td><input type="text" class="form-control subject" value="Science"><span></span></td>
+                        <td><input type="number" class="form-control marks" value="90" onkeypress="onlyDigit(event)"><span></span></td>
+                        <td>
+                            <div>
+                                <button class="accept" type="button">ACCEPT</button>
+                                <button class="reject" type="button">REJECT</button>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="count"></td>
+                        <td><input type="text" class="form-control stuname" value="Shashank"><span></span></td>
+                        <td><input type="text" class="form-control subject" value="Computer Network"><span></span></td>
+                        <td><input type="number" class="form-control marks" value="70" onkeypress="onlyDigit(event)"><span></span></td>
+                        <td>
+                            <div>
+                                <button class="accept" type="button">ACCEPT</button>
+                                <button class="reject" type="button">REJECT</button>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="count"></td>
+                        <td><input type="text" class="form-control stuname" value="Raj"><span></span></td>
+                        <td><input type="text" class="form-control subject" value="Database"><span></span></td>
+                        <td><input type="number" class="form-control marks" value="80" onkeypress="onlyDigit(event)"><span></span></td>
+                        <td>
+                            <div>
+                                <button class="accept" type="button">ACCEPT</button>
+                                <button class="reject" type="button">REJECT</button>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="count"></td>
+                        <td><input type="text" class="form-control stuname" value="Mihir"><span></span></td>
+                        <td><input type="text" class="form-control subject" value="Database"><span></span></td>
+                        <td><input type="number" class="form-control marks" value="56" onkeypress="onlyDigit(event)"><span></span></td>
+                        <td>
+                            <div>
+                                <button class="accept" type="button">ACCEPT</button>
+                                <button class="reject" type="button">REJECT</button>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="count"></td>
+                        <td><input type="text" class="form-control stuname" value="Jatin"><span></span></td>
+                        <td><input type="text" class="form-control subject" value="Data Structure"><span></span></td>
+                        <td><input type="number" class="form-control marks" value="76" onkeypress="onlyDigit(event)"><span></span></td>
+                        <td>
+                            <div>
+                                <button class="accept" type="button">ACCEPT</button>
+                                <button class="reject" type="button">REJECT</button>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button class="btn btn-success" id="saveRecord" type="submit" >SAVE RECORD</button>
+            </form>
+
+
+
+        </div>
+        <div class="" style="display:none" id="resultArea">
+            <div class="mt-3">
+            <button type="button" class="btn btn-primary my-2" id="sortByName">SORT BY NAME</button>
+            <button type="button" class="btn btn-primary my-2" id="sortBySubject">SORT BY SUBJECT</button>
+            <input type="text" placeholder="Search Name Or Marks" id="searchText">
+
+            <h2 align="center">--:: RESULT TABLE ::--</h2>
+            <table id="resultTable" class="table">
+                <thead>
+                    <th>SR NO.</th>
+                    <th>NAME</th>
+                    <th>SUBJECT</th>
+                    <th>MARKS</th>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+            <h2 align="center">--:: PERCENTAGE TABLE ::--</h2>
+            <table id="percentageTable" class="table">
+                <thead>
+                    <th>SR NO.</th>
+                    <th>NAME</th>
+                    <th>PERCENTAGE</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+    </div>
+</body>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="bootstrap/bootstrap_js_1.js"></script>
+  <script src="bootstrap/bootstrap_js_2.js"></script>
+
+  <!-- Including external js file -->
+  <script src="jquery_task3.js"></script>
+
+</html>
